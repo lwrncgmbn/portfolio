@@ -23,17 +23,26 @@ const Home = () => {
               <a
                 href="https://www.linkedin.com/in/lawrence-gumabon-7018b7255/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaLinkedin className="hover:text-primary-0" />
               </a>
             </li>
             <li className="duration-300 hover:scale-105">
-              <a href="https://github.com/lwrncgmbn" target="_blank">
+              <a
+                href="https://github.com/lwrncgmbn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaGithub className="hover:text-[#24292e]" />
               </a>
             </li>
             <li className="duration-300 hover:scale-105">
-              <a href="https://www.facebook.com/lwrncgmbn/" target="_blank">
+              <a
+                href="https://www.facebook.com/lwrncgmbn/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaFacebook className="hover:text-primary-0" />
               </a>
             </li>

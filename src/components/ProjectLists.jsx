@@ -148,13 +148,18 @@ const ProjectLists = () => {
             className="flex flex-col justify-between w-full gap-6 my-6 md:flex-row md:even:flex-row-reverse"
           >
             {/* IMAGE */}
-            <div className="flex bg-[#303030] w-full max-h-96 rounded-md p-4 group cursor-pointer overflow-hidden shadow-md">
+            <a
+              href={project.live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex bg-[#303030] w-full max-h-96 rounded-md p-4 group cursor-pointer overflow-hidden shadow-md"
+            >
               <img
                 src={project.image}
                 alt=""
                 className="flex  items-center  object-center object-cover rounded-md group-hover:scale-[102%] duration-300 shadow-md "
               />
-            </div>
+            </a>
             {/* DESCRIPTION */}
             <div className="w-full">
               <div className="flex flex-col items-start gap-4 pt-2 mb-4 text-4xl font-bold sm:items-center sm:flex-row sm:mb-0">

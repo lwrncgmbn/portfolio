@@ -12,7 +12,7 @@ const Skills = () => {
         {/* PROJECTS */}
         <p>Technologies and Tools</p>
         <div className="flex justify-center w-full">
-          <div className="grid max-w-4xl grid-cols-1 gap-8 py-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 place-items-center">
+          <div className="grid max-w-4xl grid-cols-2 gap-8 py-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center">
             {/* LISTS */}
             <SkillLists />
           </div>

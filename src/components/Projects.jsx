@@ -5,12 +5,12 @@ const Projects = () => {
   return (
     <div
       name="projects"
-      className="w-full  h-full flex justify-center items-center px-4"
+      className="flex items-center justify-center w-full h-full px-4"
     >
-      <div className="flex flex-col justify-center max-w-7xl w-full">
-        <p className="text-5xl font-bold  text-left">Projects.</p>
+      <div className="flex flex-col justify-center w-full max-w-7xl">
+        <p className="text-5xl font-bold text-left">Projects.</p>
         {/* PROJECTS */}
-        <div className="py-6 grid gap-6 place-items-center">
+        <div className="flex flex-col gap-6 py-6">
           {/* LISTS */}
           <ProjectLists />
         </div>

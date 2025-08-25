@@ -145,7 +145,7 @@ const ProjectLists = () => {
         .map((project) => (
           <div
             key={project.id}
-            className="flex flex-col justify-between w-full gap-6 my-6 md:flex-row md:even:flex-row-reverse"
+            className="flex flex-col justify-between w-full gap-6 my-4 lg:my-6 md:flex-row md:even:flex-row-reverse"
           >
             {/* IMAGE */}
             <a
@@ -157,7 +157,7 @@ const ProjectLists = () => {
               <img
                 src={project.image}
                 alt=""
-                className="flex  items-center  object-center object-cover rounded-md group-hover:scale-[102%] duration-300 shadow-md "
+                className="flex items-center object-center object-cover rounded-md group-hover:scale-[102%] duration-300 shadow-md "
               />
             </a>
             {/* DESCRIPTION */}

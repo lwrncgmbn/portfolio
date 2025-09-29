@@ -6,6 +6,7 @@ import passwordmatrix from "../assets/images/passwordmatrix.png";
 import gymlarious from "../assets/images/gymlarious.png";
 import wheeltech from "../assets/images/wheeltech-landing-page.png";
 import passwordGenerator from "../assets/images/password-generator.png";
+import creativeDemo from "../assets/images/creative-demo.png";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
 import { FaJs } from "react-icons/fa";
@@ -14,6 +15,8 @@ import { FaGithub } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
+import { DiJqueryLogo } from "react-icons/di";
+import { FaHubspot } from "react-icons/fa";
 
 const projects = [
   {
@@ -111,7 +114,7 @@ const projects = [
     description:
       "A system that allows users to list their motorcycles for rent, providing a convenient platform for others to browse and book available options. It simplifies the process of renting and booking motorcycles, making it easy for owners and renters to connect.",
     // github: "https://github.com/lwrncgmbn/wheeltech",
-    live: "http://wheeltechph.infinityfreeapp.com/?i=1",
+    // live: "http://wheeltechph.infinityfreeapp.com/?i=1",
     html: true,
     css: true,
     js: true,
@@ -133,6 +136,23 @@ const projects = [
     js: true,
     tailwind: true,
     react: true,
+  },
+  {
+    id: 8,
+    image: creativeDemo,
+    alt: "Creative Demo",
+    title: "Creative Demo",
+    subdes: "Creative Demo Website",
+    description:
+      "A demo website built with HubSpot CMS, featuring custom modules, themes and templates",
+    live: "https://243930174.hs-sites-na2.com/creative-demo-home",
+    html: true,
+    css: true,
+    js: true,
+    // tailwind: true,
+    // react: true,
+    jquery: true,
+    hubspot: true,
   },
 ];
 
@@ -210,6 +230,11 @@ const ProjectLists = () => {
                       <FaJs className="text-3xl" />
                     </p>
                   )}
+                  {project.jquery && (
+                    <p className="flex items-center justify-center w-12 h-12 bg-gray-300 rounded-full ">
+                      <DiJqueryLogo className="text-3xl" />
+                    </p>
+                  )}
                   {project.react && (
                     <p className="flex items-center justify-center w-12 h-12 bg-gray-300 rounded-full ">
                       <FaReact className="text-3xl" />
@@ -218,6 +243,11 @@ const ProjectLists = () => {
                   {project.php && (
                     <p className="flex items-center justify-center w-12 h-12 bg-gray-300 rounded-full ">
                       <FaPhp className="text-3xl" />
+                    </p>
+                  )}
+                  {project.hubspot && (
+                    <p className="flex items-center justify-center w-12 h-12 bg-gray-300 rounded-full ">
+                      <FaHubspot className="text-3xl" />
                     </p>
                   )}
                 </div>

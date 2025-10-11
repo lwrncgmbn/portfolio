@@ -7,15 +7,13 @@ const Skills = () => {
       name="skills"
       className="flex items-center justify-center w-full h-full min-h-screen px-4"
     >
-      <div className="flex flex-col justify-center w-full max-w-7xl">
+      <div className="flex flex-col justify-center w-full max-w-5xl">
         <p className="text-5xl font-bold text-left">Skills.</p>
         {/* PROJECTS */}
         <p>Technologies and Tools</p>
-        <div className="flex justify-center w-full">
-          <div className="grid max-w-4xl grid-cols-2 gap-4 py-6 md:gap-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center">
-            {/* LISTS */}
-            <SkillLists />
-          </div>
+        <div>
+          {/* LISTS */}
+          <SkillLists />
         </div>
       </div>
     </div>

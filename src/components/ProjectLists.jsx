@@ -19,41 +19,41 @@ import { DiJqueryLogo } from "react-icons/di";
 import { FaHubspot } from "react-icons/fa";
 
 const projects = [
-  {
-    id: 1,
-    image: ecommerce,
-    alt: "E-Commerce",
-    title: "E-Commerce",
-    subdes: "Frontend Mentor Challenge",
-    description:
-      "This design was recreated from a Frontend Mentor project, with a focus on achieving visual accuracy and ensuring all buttons function seamlessly.",
-    github:
-      "https://github.com/lwrncgmbn/frontend-mentor/tree/main/ecommerce-product-page-main",
-    live: "https://ecommerce-product-page-49ceea.netlify.app/",
-    html: true,
-    css: true,
-    js: true,
-    php: false,
-    tailwind: true,
-    react: false,
-  },
-  {
-    id: 2,
-    image: portfolio,
-    alt: "portfolio",
-    title: "Portfolio",
-    subdes: "Portfolio",
-    description:
-      "This portfolio was created in 2022 as a personal project during my school years, highlighting my skills and showcasing my work as a developer.",
-    github: "https://github.com/lwrncgmbn/portfolio-project",
-    live: "https://lawrence-project.netlify.app/",
-    html: true,
-    css: true,
-    js: true,
-    php: false,
-    tailwind: false,
-    react: false,
-  },
+  // {
+  //   id: 1,
+  //   image: ecommerce,
+  //   alt: "E-Commerce",
+  //   title: "E-Commerce",
+  //   subdes: "Frontend Mentor Challenge",
+  //   description:
+  //     "This design was recreated from a Frontend Mentor project, with a focus on achieving visual accuracy and ensuring all buttons function seamlessly.",
+  //   github:
+  //     "https://github.com/lwrncgmbn/frontend-mentor/tree/main/ecommerce-product-page-main",
+  //   live: "https://ecommerce-product-page-49ceea.netlify.app/",
+  //   html: true,
+  //   css: true,
+  //   js: true,
+  //   php: false,
+  //   tailwind: true,
+  //   react: false,
+  // },
+  // {
+  //   id: 2,
+  //   image: portfolio,
+  //   alt: "portfolio",
+  //   title: "Portfolio",
+  //   subdes: "Portfolio",
+  //   description:
+  //     "This portfolio was created in 2022 as a personal project during my school years, highlighting my skills and showcasing my work as a developer.",
+  //   github: "https://github.com/lwrncgmbn/portfolio-project",
+  //   live: "https://lawrence-project.netlify.app/",
+  //   html: true,
+  //   css: true,
+  //   js: true,
+  //   php: false,
+  //   tailwind: false,
+  //   react: false,
+  // },
   // {
   //   id: 3,
   //   image: passwordmatrix,
@@ -182,7 +182,7 @@ const ProjectLists = () => {
             </a>
             {/* DESCRIPTION */}
             <div className="w-full">
-              <div className="flex flex-col items-start gap-4 pt-2 mb-4 text-4xl font-bold sm:items-center sm:flex-row sm:mb-0">
+              <div className="flex flex-col items-start gap-4 mb-4 text-4xl font-bold sm:items-center sm:flex-row sm:mb-0">
                 <p>{project.title}</p>
                 <div className="flex items-center gap-4 text-2xl">
                   {project.github && (

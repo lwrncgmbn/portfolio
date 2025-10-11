@@ -9,11 +9,11 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="flex items-center justify-center w-full min-h-screen px-8"
+      className="flex items-center justify-center w-full max-w-5xl min-h-screen px-8 mx-auto lg:px-0"
     >
-      <div className="flex items-center w-full justify-evenly max-w-7xl">
+      <div className="flex items-center justify-between w-full">
         {/* LEFT SIDE */}
-        <div className="flex flex-col items-center md:items-start">
+        <div className="flex flex-col items-center w-full md:w-auto md:items-start">
           <p className="text-4xl md:text-6xl">Hello, I am</p>
           <p className="text-4xl font-semibold text-center md:text-start md:text-6xl">
             Lawrence Gumabon
@@ -52,7 +52,7 @@ const Home = () => {
         <div className="relative hidden md:block">
           <div id="contactMe" className="cursor-pointer ">
             <Link to="contacts" smooth={true} duration={500}>
-              <div className="absolute p-2 px-4 font-bold text-white rounded-full bg-primary-0 md:text-lg -top-20 left-20 ">
+              <div className="absolute p-2 px-4 font-bold text-white rounded-full bg-primary-0 md:text-lg -top-20 left-20 text-nowrap">
                 CONTACT ME
               </div>
               <div

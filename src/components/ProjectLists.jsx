@@ -182,8 +182,8 @@ const ProjectLists = () => {
             </a>
             {/* DESCRIPTION */}
             <div className="w-full">
-              <div className="flex flex-col items-start gap-4 mb-4 text-4xl font-bold sm:items-center sm:flex-row sm:mb-0">
-                <p>{project.title}</p>
+              <div className="flex flex-wrap items-center gap-4 mb-4 text-4xl font-bold sm:flex-row sm:mb-0">
+                <p className="text-2xl md:text-4xl">{project.title}</p>
                 <div className="flex items-center gap-4 text-2xl">
                   {project.github && (
                     <a

@@ -8,7 +8,7 @@ const Contact = () => {
       className="flex items-center justify-center w-full h-full min-h-screen px-4"
     >
       <div className="flex flex-col justify-center w-full max-w-5xl">
-        <p className="text-5xl font-bold text-left">Contact.</p>
+        <p className="text-4xl font-bold text-left md:text-5xl">Contact.</p>
         <p>Let's Collaborate!</p>
         <div className="grid items-center gap-4 py-6 md:grid-cols-2">
           <form
@@ -35,7 +35,7 @@ const Contact = () => {
             ></textarea>
             <button
               type="submit"
-              className="w-full p-4 mt-4 font-bold tracking-widest text-white duration-300 rounded-md shadow-md  bg-primary-0 hover:brightness-110"
+              className="w-full p-4 mt-4 font-bold tracking-widest text-white duration-300 rounded-md shadow-md bg-primary-0 hover:brightness-110"
             >
               Submit Message
             </button>

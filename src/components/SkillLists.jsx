@@ -44,7 +44,7 @@ const skills = [
 const SkillLists = () => {
   return (
     <>
-      <Swiper
+      {/* <Swiper
         slidesPerView={1}
         spaceBetween={32}
         loop={true}
@@ -70,15 +70,21 @@ const SkillLists = () => {
       >
         {skills.map((skill) => (
           <SwiperSlide key={skill.name} className="">
+          </SwiperSlide>
+        ))}
+      </Swiper> */}
+      <div className="grid grid-cols-2 gap-4 mt-6 md:grid-cols-3 lg:grid-cols-5">
+        {skills.map((skill) => (
+          <div key={skill.name} className="">
             <div className="flex flex-col items-center justify-center h-48 p-4 bg-gray-200 shadow-md rounded-xl">
               <span className="text-6xl">{skill.logo}</span>
               <span className="pt-2 font-semibold text-center ">
                 {skill.name}
               </span>
             </div>
-          </SwiperSlide>
+          </div>
         ))}
-      </Swiper>
+      </div>
     </>
   );
 };

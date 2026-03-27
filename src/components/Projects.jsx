@@ -8,7 +8,7 @@ const Projects = () => {
       className="flex items-center justify-center w-full h-full px-4"
     >
       <div className="flex flex-col justify-center w-full max-w-5xl">
-        <p className="text-5xl font-bold text-left">Projects.</p>
+        <p className="text-4xl font-bold text-left md:text-5xl">Projects.</p>
         {/* PROJECTS */}
         <div className="flex flex-col gap-6 py-6">
           {/* LISTS */}

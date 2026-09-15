@@ -1,5 +1,5 @@
 import React from "react";
-import Profile from "../assets/images/picture.png";
+import Profile from "../assets/images/lawrence.png";
 import { Link } from "react-scroll";
 import { FaGithub } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
@@ -9,66 +9,67 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="flex items-center justify-center w-full max-w-5xl min-h-screen px-8 mx-auto lg:px-0"
+      className="flex items-center justify-center w-full max-w-4xl min-h-screen px-8 mx-auto lg:px-0"
     >
-      <div className="flex items-center justify-between w-full">
-        {/* LEFT SIDE */}
-        <div className="flex flex-col items-center w-full md:w-auto md:items-start">
-          <p className="text-4xl md:text-6xl">Hello, I am</p>
-          <p className="text-4xl font-semibold text-center md:text-start md:text-6xl">
-            Lawrence Gumabon
-          </p>
-          <ul className="flex gap-4 mt-6 text-4xl md:text-5xl">
-            <li className="duration-300 hover:scale-105">
+      <div className="flex flex-col items-center">
+        <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-8">
+          <h1 className="text-5xl font-semibold text-center md:text-start md:text-7xl lg:text-[120px]">
+            <div className="stroke-text text-transparent text-center">
+              LAWRENCE
+            </div>
+            <div className="text-white text-center">GUMABON</div>
+          </h1>
+          {/* RIGHT SIDE */}
+          <div className="relative md:block">
+            <img
+              src={Profile}
+              alt="Image"
+              className="duration-300 w-72 hover:scale-105"
+            />
+          </div>
+        </div>
+
+        <div className="text-white text-2xl text-center w-full mt-8 font-semibold">
+          Frontend & HubSpot Developer
+        </div>
+
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 mt-4 ">
+          <div className="text-white text-lg">Let's collaborate: </div>
+          <ul className="flex gap-4 flex-wrap justify-center">
+            <li className="">
               <a
                 href="https://www.linkedin.com/in/lawrence-gumabon-7018b7255/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-white py-2 px-4 rounded-full hover:text-primary-0 duration-300 hover:-translate-y-1"
               >
-                <FaLinkedin className="hover:text-primary-0" />
+                <FaLinkedin className=" text-xl" />
+                <div className="font-semibold">LinkedIn</div>
               </a>
             </li>
-            <li className="duration-300 hover:scale-105">
+            <li className="">
               <a
                 href="https://github.com/lwrncgmbn"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-white py-2 px-4 rounded-full hover:text-[#24292e] duration-300 hover:-translate-y-1"
               >
-                <FaGithub className="hover:text-[#24292e]" />
+                <FaGithub className=" text-xl" />
+                <div className="font-semibold">Github</div>
               </a>
             </li>
-            <li className="duration-300 hover:scale-105">
+            <li className="">
               <a
                 href="https://www.facebook.com/lwrncgmbn/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-white py-2 px-4 rounded-full hover:text-primary-0 duration-300 hover:-translate-y-1"
               >
-                <FaFacebook className="hover:text-primary-0" />
+                <FaFacebook className=" text-xl" />
+                <div className="font-semibold">Facebook</div>
               </a>
             </li>
           </ul>
-        </div>
-        {/* RIGHT SIDE */}
-        <div className="relative hidden md:block">
-          <div id="contactMe" className="cursor-pointer ">
-            <Link to="contacts" smooth={true} duration={500}>
-              <div className="absolute p-2 px-4 font-bold text-white rounded-full bg-primary-0 md:text-lg -top-20 left-20 text-nowrap">
-                CONTACT ME
-              </div>
-              <div
-                className="absolute -top-10 left-[50%] w-0 h-0 
-  border-l-[15px] border-l-transparent
-  border-t-[25px] border-t-primary-0
-  border-r-[15px] border-r-transparent"
-              ></div>
-            </Link>
-          </div>
-
-          <img
-            src={Profile}
-            alt="Image"
-            className="duration-300 w-72 hover:rotate-6"
-          />
         </div>
       </div>
     </div>

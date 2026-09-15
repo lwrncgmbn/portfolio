@@ -44,35 +44,6 @@ const skills = [
 const SkillLists = () => {
   return (
     <>
-      {/* <Swiper
-        slidesPerView={1}
-        spaceBetween={32}
-        loop={true}
-        autoplay={{
-          delay: 0,
-          disableOnInteraction: false,
-        }}
-        speed={3000}
-        allowTouchMove={false}
-        modules={[Autoplay]}
-        breakpoints={{
-          640: {
-            slidesPerView: 2,
-          },
-          768: {
-            slidesPerView: 4,
-          },
-          1024: {
-            slidesPerView: 5,
-          },
-        }}
-        className="py-2 mt-10"
-      >
-        {skills.map((skill) => (
-          <SwiperSlide key={skill.name} className="">
-          </SwiperSlide>
-        ))}
-      </Swiper> */}
       <div className="grid grid-cols-2 gap-4 mt-6 md:grid-cols-3 lg:grid-cols-5">
         {skills.map((skill) => (
           <div key={skill.name} className="">

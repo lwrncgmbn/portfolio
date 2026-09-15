@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="bg-[#F5F5F5] font-Poppins">
+    <div className="bg-[#1E1E1E] font-Poppins">
       <NavBar />
       <Home />
       <Projects />

@@ -18,4 +18,9 @@
       top: 10px;
     }
   }
+
+  /* Stroke Text */
+  .stroke-text {
+    -webkit-text-stroke: 2px white;
+  }
 }

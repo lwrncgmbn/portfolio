@@ -98,6 +98,7 @@ const projects = [
       "Gymlarious is a system designed to create a vibrant fitness community by combining workouts with fun and laughter. It encourages users to engage in exercise routines that feel like a celebration, where every rep comes with a sense of joy and motivation. The platform fosters a unique and enjoyable approach to fitness, making workouts more exciting and engaging for everyone.",
     github: "https://github.com/lwrncgmbn/gymlarious",
     live: "https://lwrncgmbn.github.io/gymlarious/#/home",
+    pageType: "Landing Page",
     html: true,
     css: true,
     js: true,
@@ -115,6 +116,7 @@ const projects = [
       "A system that allows users to list their motorcycles for rent, providing a convenient platform for others to browse and book available options. It simplifies the process of renting and booking motorcycles, making it easy for owners and renters to connect.",
     // github: "https://github.com/lwrncgmbn/wheeltech",
     // live: "http://wheeltechph.infinityfreeapp.com/?i=1",
+    pageType: "Landing Page",
     html: true,
     css: true,
     js: true,
@@ -131,6 +133,7 @@ const projects = [
     description:
       "A web application that allows users to generate random passwords tailored to their needs. Users can customize the password by selecting options such as uppercase letters, lowercase letters, digits, symbols, and length. It also features a password history section for viewing previously generated passwords.",
     live: "https://password-generator-one-pearl.vercel.app/",
+    pageType: "Landing Page",
     html: true,
     css: true,
     js: true,
@@ -146,6 +149,7 @@ const projects = [
     description:
       "A demo website built with HubSpot CMS, featuring custom modules, themes and templates",
     live: "https://243930174.hs-sites-na2.com/creative-demo-home",
+    pageType: "Landing Page",
     html: true,
     css: true,
     js: true,
@@ -158,32 +162,30 @@ const projects = [
 
 const ProjectLists = () => {
   return (
-    <>
+    <div className="flex flex-col gap-12 mt-12">
       {projects
         .slice(0)
         .reverse()
         .map((project) => (
           <div
             key={project.id}
-            className="flex flex-col justify-between w-full gap-6 my-4 lg:my-6 md:flex-row md:even:flex-row-reverse"
+            className="grid justify-between w-full grid-cols-1 gap-6 lg:grid-cols-2 md:flex-row md:even:flex-row-reverse"
           >
-            {/* IMAGE */}
-            <a
-              href={project.live}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex bg-[#303030] w-full max-h-96 rounded-md p-4 group cursor-pointer overflow-hidden shadow-md"
-            >
-              <img
-                src={project.image}
-                alt=""
-                className="flex items-center object-center object-cover rounded-md group-hover:scale-[102%] duration-300 shadow-md "
-              />
-            </a>
-            {/* DESCRIPTION */}
-            <div className="w-full">
-              <div className="flex flex-wrap items-center gap-4 mb-4 text-4xl font-bold sm:flex-row sm:mb-0">
-                <p className="text-2xl md:text-4xl">{project.title}</p>
+            {/* <div className="h-full p-4 bg-[#FFFFFF20] shadow-md rounded-xl flex items-center"> */}
+            {/* <div className="rounded-lg"> */}
+            <img
+              src={project.image}
+              alt=""
+              className="flex items-center object-contain object-center overflow-hidden duration-300 rounded-xl"
+            />
+            {/* </div>
+            </div> */}
+
+            <div className="flex flex-col">
+              <div className="flex items-center gap-4 mb-2">
+                <div className="text-3xl font-semibold text-white ">
+                  {project.title}
+                </div>
                 <div className="flex items-center gap-4 text-2xl">
                   {project.github && (
                     <a
@@ -205,57 +207,61 @@ const ProjectLists = () => {
                   )}
                 </div>
               </div>
-              <p className="text-sm">{project.subdes}</p>
-              <p className="py-4 text-base">{project.description}</p>
-              <div>
-                <p className="text-lg font-bold">Technologies: </p>
-                <div className="flex items-center gap-4 py-2 ">
-                  {project.html && (
-                    <p className="flex items-center justify-center w-12 h-12 bg-gray-300 rounded-full ">
-                      <FaHtml5 className="text-3xl" />
-                    </p>
-                  )}
-                  {project.css && (
-                    <p className="flex items-center justify-center w-12 h-12 bg-gray-300 rounded-full ">
-                      <FaCss3 className="text-3xl" />
-                    </p>
-                  )}
-                  {project.tailwind && (
-                    <p className="flex items-center justify-center w-12 h-12 bg-gray-300 rounded-full ">
-                      <SiTailwindcss className="text-3xl" />
-                    </p>
-                  )}
-                  {project.js && (
-                    <p className="flex items-center justify-center w-12 h-12 bg-gray-300 rounded-full ">
-                      <FaJs className="text-3xl" />
-                    </p>
-                  )}
-                  {project.jquery && (
-                    <p className="flex items-center justify-center w-12 h-12 bg-gray-300 rounded-full ">
-                      <DiJqueryLogo className="text-3xl" />
-                    </p>
-                  )}
-                  {project.react && (
-                    <p className="flex items-center justify-center w-12 h-12 bg-gray-300 rounded-full ">
-                      <FaReact className="text-3xl" />
-                    </p>
-                  )}
-                  {project.php && (
-                    <p className="flex items-center justify-center w-12 h-12 bg-gray-300 rounded-full ">
-                      <FaPhp className="text-3xl" />
-                    </p>
-                  )}
-                  {project.hubspot && (
-                    <p className="flex items-center justify-center w-12 h-12 bg-gray-300 rounded-full ">
-                      <FaHubspot className="text-3xl" />
-                    </p>
-                  )}
-                </div>
+              <div className="mb-4 text-sm text-white">{project.subdes}</div>
+              <div className="mb-4 text-white">{project.description}</div>
+              <div className="flex mb-4 text-xs">
+                <span className="px-3 py-1 bg-white rounded-full">
+                  {project.pageType}
+                </span>
+              </div>
+
+              <div className="font-semibold text-white">Technologies:</div>
+              <div className="flex flex-wrap items-center gap-4 py-2">
+                {project.html && (
+                  <p className="flex items-center justify-center w-12 h-12 bg-gray-300 rounded-full ">
+                    <FaHtml5 className="text-3xl" />
+                  </p>
+                )}
+                {project.css && (
+                  <p className="flex items-center justify-center w-12 h-12 bg-gray-300 rounded-full ">
+                    <FaCss3 className="text-3xl" />
+                  </p>
+                )}
+                {project.tailwind && (
+                  <p className="flex items-center justify-center w-12 h-12 bg-gray-300 rounded-full ">
+                    <SiTailwindcss className="text-3xl" />
+                  </p>
+                )}
+                {project.js && (
+                  <p className="flex items-center justify-center w-12 h-12 bg-gray-300 rounded-full ">
+                    <FaJs className="text-3xl" />
+                  </p>
+                )}
+                {project.jquery && (
+                  <p className="flex items-center justify-center w-12 h-12 bg-gray-300 rounded-full ">
+                    <DiJqueryLogo className="text-3xl" />
+                  </p>
+                )}
+                {project.react && (
+                  <p className="flex items-center justify-center w-12 h-12 bg-gray-300 rounded-full ">
+                    <FaReact className="text-3xl" />
+                  </p>
+                )}
+                {project.php && (
+                  <p className="flex items-center justify-center w-12 h-12 bg-gray-300 rounded-full ">
+                    <FaPhp className="text-3xl" />
+                  </p>
+                )}
+                {project.hubspot && (
+                  <p className="flex items-center justify-center w-12 h-12 bg-gray-300 rounded-full ">
+                    <FaHubspot className="text-3xl" />
+                  </p>
+                )}
               </div>
             </div>
           </div>
         ))}
-    </>
+    </div>
   );
 };
 

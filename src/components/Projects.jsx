@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <div
       name="projects"
-      className="flex items-center justify-center w-full h-full px-4"
+      className="flex items-center justify-center w-full h-full px-4 py-16"
     >
       <div className="flex flex-col justify-center w-full max-w-4xl">
         <p className="flex items-center gap-2 text-2xl font-bold text-left md:text-4xl">

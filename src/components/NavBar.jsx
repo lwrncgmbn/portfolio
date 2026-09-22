@@ -26,21 +26,21 @@ const NavBar = () => {
         {/* FOR DESKTOP VIEW MENU */}
         <ul className="items-center hidden gap-8 text-base font-semibold cursor-pointer md:flex text-white">
           <li>
-            <Link to="projects" smooth={true} offset={-80} duration={500}>
+            <Link to="projects" smooth={true} offset={-64} duration={500}>
               <span className="flex items-center gap-2 duration-300 hover:scale-105">
                 Projects
               </span>
             </Link>
           </li>
           <li>
-            <Link to="home" smooth={true} offset={0} duration={500}>
+            <Link to="experience" smooth={true} offset={-64} duration={500}>
               <span className="flex items-center gap-2 duration-300 hover:scale-105">
                 Experience
               </span>
             </Link>
           </li>
           <li>
-            <Link to="skills" smooth={true} duration={500}>
+            <Link to="skills" smooth={true} offset={-64} duration={500}>
               <span className="flex items-center gap-2 duration-300 hover:scale-105">
                 Skills
               </span>
@@ -55,9 +55,8 @@ const NavBar = () => {
           </li>
           <li>
             <Link
-              to="home"
+              to="contacts"
               smooth={true}
-              offset={0}
               duration={500}
               className="flex items-center justify-center gap-2 bg-white rounded-full px-4 py-2 text-sm font-semibold duration-300 ease-out hover:-translate-y-1"
             >
@@ -105,7 +104,7 @@ const NavBar = () => {
           <li>
             <Link
               onClick={handleClick}
-              to="home"
+              to="experience"
               smooth={true}
               offset={50}
               duration={500}

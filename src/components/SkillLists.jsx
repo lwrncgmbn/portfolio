@@ -47,7 +47,10 @@ const SkillLists = () => {
       <div className="grid grid-cols-2 gap-4 mt-6 md:grid-cols-3 lg:grid-cols-5">
         {skills.map((skill) => (
           <div key={skill.name} className="">
-            <div className="flex flex-col items-center justify-center h-48 p-4 bg-gray-200 shadow-md rounded-xl">
+            <div
+              className="flex flex-col items-center justify-center aspect-square p-4 bg-gray-200 shadow-md rounded-xl transition-all duration-300
+                hover:-translate-y-1"
+            >
               <span className="text-6xl">{skill.logo}</span>
               <span className="pt-2 font-semibold text-center ">
                 {skill.name}

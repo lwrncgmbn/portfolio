@@ -106,7 +106,7 @@ const NavBar = () => {
               onClick={handleClick}
               to="experience"
               smooth={true}
-              offset={50}
+              offset={-80}
               duration={500}
             >
               <span className="flex items-center gap-2 text-white">
@@ -119,6 +119,7 @@ const NavBar = () => {
               onClick={handleClick}
               to="skills"
               smooth={true}
+              offset={-80}
               duration={500}
             >
               <span className="flex items-center gap-2 text-white">Skills</span>
@@ -129,6 +130,7 @@ const NavBar = () => {
               onClick={handleClick}
               to="contacts"
               smooth={true}
+              offset={-80}
               duration={500}
             >
               <span className="flex items-center gap-2 text-white">

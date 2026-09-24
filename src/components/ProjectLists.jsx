@@ -116,7 +116,7 @@ const projects = [
       "A system that allows users to list their motorcycles for rent, providing a convenient platform for others to browse and book available options. It simplifies the process of renting and booking motorcycles, making it easy for owners and renters to connect.",
     // github: "https://github.com/lwrncgmbn/wheeltech",
     // live: "http://wheeltechph.infinityfreeapp.com/?i=1",
-    pageType: "Landing Page",
+    pageType: "Web Application",
     html: true,
     css: true,
     js: true,
@@ -133,7 +133,7 @@ const projects = [
     description:
       "A web application that allows users to generate random passwords tailored to their needs. Users can customize the password by selecting options such as uppercase letters, lowercase letters, digits, symbols, and length. It also features a password history section for viewing previously generated passwords.",
     live: "https://password-generator-one-pearl.vercel.app/",
-    pageType: "Landing Page",
+    pageType: "Tool",
     html: true,
     css: true,
     js: true,

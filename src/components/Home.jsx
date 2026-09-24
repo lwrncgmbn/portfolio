@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="flex items-center justify-center w-full max-w-4xl min-h-screen px-8 mx-auto lg:px-0"
+      className="flex items-center justify-center w-full max-w-4xl pt-[132px] md:pt-0 py-12 md:py-0 h-full md:min-h-screen px-8 mx-auto lg:px-0"
     >
       <div className="flex flex-col items-center">
         <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-8">

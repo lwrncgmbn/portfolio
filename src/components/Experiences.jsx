@@ -28,7 +28,7 @@ const Experiences = () => {
             className=" py-6 border-b-[1px] border-b-white flex-col md:flex-row items-start flex md:items-center justify-between gap-4 last:border-none last:pb-0 first:pt-0"
           >
             <div className="flex items-center gap-4 ">
-              <div className="w-24 h-24 rounded-full bg-gray-400 hidden md:flex"></div>
+              <div className="w-24 h-24 rounded-full bg-gray-400 hidden"></div>
               <div className="text-white">
                 <div className="text-lg font-semibold">{exp.compName}</div>
                 <div className="">{exp.role}</div>
